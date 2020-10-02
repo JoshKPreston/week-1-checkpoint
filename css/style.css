@@ -3,6 +3,6 @@
     //outline: 1px solid red;
 }
 
-html, body {
-    
+.my-card {
+    height: 30vh;
 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Lorem Ipsum</title>
 </head>
@@ -13,71 +14,143 @@
 <body>
   <div class="container d-flex flex-column h-100">
 
+
+
     <!-- header -->
-    <header class="row bg-dark text-light flex-column">
+    <header>
+      <div class="row bg-dark text-light flex-column">
 
-      <div class="col-12 logo bg-primary p-3">
-        <i class="fa fa-bandcamp" aria-hidden="true"></i>
-        <h1>Lorem Ipsum</h1>
-      </div>
+        <div class="col-12 d-flex bg-primary p-3 logo">
+          <h1><i class="fa fa-bandcamp" aria-hidden="true"></i> Lorem Ipsum</h1>
+        </div>
 
-      <div class="col">
-        <h3 class="p-2">Subtle heading</h3>
+        <div class="col">
+          <h3 class="p-2 pt-4">Subtle heading</h3>
 
-        <div class="card text-dark p-3 mb-5">
-          <h3 class="">Less Subtle heading</h3>
+          <div class="card text-dark p-3 mb-5">
+            <h3 class="">Less Subtle heading</h3>
 
-          <form class="" action="">
-            <div class="form-group">
+            <form class="" action="">
+              <div class="form-group">
 
-              <label for="name"></label>
-              <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="NAME">
+                <label for="name"></label>
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+                  placeholder="NAME">
 
-              <label for="email"></label>
-              <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="EMAIL">
+                <label for="email"></label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                  placeholder="EMAIL">
 
-              <div class="form-row">
-                <div class="col-8">
-                  <label for="tel"></label>
-                  <input type="tel" class="form-control" name="tel" id="tel" aria-describedby="helpId" placeholder="PHONE">
+                <div class="form-row">
+                  <div class="col-8">
+                    <label for="tel"></label>
+                    <input type="tel" class="form-control" name="tel" id="tel" aria-describedby="helpId"
+                      placeholder="PHONE">
+                  </div>
+                  <div class="col-4">
+                    <label for="telext"></label>
+                    <label for="telext"></label>
+                    <input type="text" class="form-control" name="telext" id="telext" aria-describedby="helpId"
+                      placeholder="EXT.">
+                  </div>
                 </div>
-                <div class="col-4">
-                  <label for="telext"></label>
-                  <label for="telext"></label>
-                  <input type="text" class="form-control" name="telext" id="telext" aria-describedby="helpId"
-                    placeholder="EXT.">
+
+                <label for="message"></label>
+                <textarea class="form-control" name="message" id="message" rows="3" placeholder="MESSAGE"></textarea>
+
+                <div class="form-group pt-3">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" name="checkbox-terms" id="checkbox-terms"
+                        value="checkedValue">
+                      by checking this box I agree to the terms of the lorem ipsum dolor
+                    </label>
+                  </div>
                 </div>
-              </div>
 
-              <label for="message"></label>
-              <textarea class="form-control" name="message" id="message" rows="3" placeholder="MESSAGE"></textarea>
-
-              <div class="form-group pt-3">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="checkbox-terms" id="checkbox-terms"
-                      value="checkedValue">
-                    by checking this box I agree to the terms of the lorem ipsum dolor
-                  </label>
+                <div class="b4-form-sub">
+                  <button class="btn .btn-primary bg-primary text-light pl-4 pr-4">SUBMIT</button>
                 </div>
-              </div>
 
-              <div class="b4-form-sub">
-                <button class="btn .btn-primary bg-primary text-light pl-4 pr-4">SUBMIT</button>
               </div>
-
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </header>
 
 
+
     <main>
+      <div class="row flex-column bg-primary text-light">
+
+        <div class="col p-3">
+          <div class="card d-flex justify-content-around text-dark p-2 mt-2 mb-3 my-card">
+            <div class="card-text d-flex p-2">
+              <i class="fa fa-fire pr-3" aria-hidden="true"></i>
+              <div class="progress flex-grow-1 bg-white">
+                <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="card-text d-flex p-2">
+              <i class="fa fa-fire pr-3" aria-hidden="true"></i>
+              <div class="progress flex-grow-1 bg-white">
+                <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 43%"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="card-text d-flex p-2">
+              <i class="fa fa-fire pr-3" aria-hidden="true"></i>
+              <div class="progress flex-grow-1 bg-white">
+                <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 78%"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="card-text d-flex p-2">
+              <i class="fa fa-fire pr-3" aria-hidden="true"></i>
+              <div class="progress flex-grow-1 bg-white">
+                <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 54%"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="card-text d-flex p-2">
+              <i class="fa fa-fire pr-3" aria-hidden="true"></i>
+              <div class="progress flex-grow-1 bg-white">
+                <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 36%"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 p-3">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <h3 class="pb-2">Lorem, ipsum.</h3>
+          <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa sequi esse atque exercitationem ex
+            ratione neque sint cum aspernatur ullam quia sed eaque possimus pariatur magni, a consequatur quo.</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="row flex-column bg-light">
+
+
+
+
+
+
+      </div>
+
 
 
 
     </main>
+
+
+
     <footer>
 
     </footer>
