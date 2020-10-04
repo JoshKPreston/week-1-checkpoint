@@ -4,59 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Lorem Ipsum</title>
 </head>
 
 <body>
-  <div class="container d-flex flex-column h-100">
+  <div class="container-fluid d-flex flex-column h-100">
 
+    <!-- sticky nav -->
+    <div class="row sticky-top">
+      <nav class="navbar container-fluid navbar-dark bg-primary sticky-top p-2">
+        <a class="navbar-brand" href="#"><i class="fa fa-first-order p-2" aria-hidden="true"></i> Lorem Ipsum</a>
+      </nav>
+    </div>
 
 
     <!-- header -->
     <header>
-      <div class="row bg-dark text-light flex-column">
+      <div class="video-overlay"></div>
+      <div class="row video">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="img/wave.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="row text-light flex-column flex-lg-row img-beach">
+        <div class="col-12 col-lg-4">
+          <h3 class="p-2 pt-4 text-light subtle-heading">Subtle heading</h3>
 
-        <div class="col-12 d-flex bg-primary pl-3 pt-4 pb-4 logo">
-          <h1><i class="fa fa-bandcamp" aria-hidden="true"></i> Lorem Ipsum</h1>
-        </div>
+          <div class="card bg-light text-dark p-3 mb-5 header-card-form">
+            <h3 class="text-secondary">Less Subtle heading</h3>
 
-        <div class="col">
-          <h3 class="p-2 pt-4">Subtle heading</h3>
-
-          <div class="card text-dark p-3 mb-5">
-            <h3 class="">Less Subtle heading</h3>
-
-            <form class="" action="">
+            <form class="text-dark" action="">
               <div class="form-group">
 
                 <label for="name"></label>
-                <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+                <input type="text" class="form-control bg-light" name="name" id="name" aria-describedby="helpId"
                   placeholder="NAME">
 
                 <label for="email"></label>
-                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                <input type="email" class="form-control bg-light" name="email" id="email" aria-describedby="emailHelpId"
                   placeholder="EMAIL">
 
                 <div class="form-row">
                   <div class="col-8">
                     <label for="tel"></label>
-                    <input type="tel" class="form-control" name="tel" id="tel" aria-describedby="helpId"
+                    <input type="tel" class="form-control bg-light" name="tel" id="tel" aria-describedby="helpId"
                       placeholder="PHONE">
                   </div>
                   <div class="col-4">
                     <label for="telext"></label>
                     <label for="telext"></label>
-                    <input type="text" class="form-control" name="telext" id="telext" aria-describedby="helpId"
+                    <input type="text" class="form-control bg-light" name="telext" id="telext" aria-describedby="helpId"
                       placeholder="EXT.">
                   </div>
                 </div>
 
                 <label for="message"></label>
-                <textarea class="form-control" name="message" id="message" rows="3" placeholder="MESSAGE"></textarea>
+                <textarea class="form-control bg-light" name="message" id="message" rows="3"
+                  placeholder="MESSAGE"></textarea>
 
                 <div class="form-group pt-3">
                   <div class="form-check">
@@ -76,6 +86,13 @@
             </form>
           </div>
         </div>
+        <div class="col-lg-5 text-light header-overlay mb-auto ml-auto mr-auto mt-4">
+          <div class="border-left border-primary mt-5 pl-3">
+            <h1>Text over an image</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae molestiae aut incidunt nulla,
+              laborum quam excepturi illo libero sunt.</h3>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -83,13 +100,13 @@
 
     <main>
       <!-- bargraph -->
-      <div class="row flex-column bg-primary text-light">
+      <div class="row flex-column flex-lg-row bg-light text-primary">
 
-        <div class="col p-3">
-          <div class="card d-flex justify-content-around text-dark p-2 mt-2 mb-3 bargraph-card">
+        <div class="col-12 col-lg-6 order-lg-2 bg-light p-3 bargraph-offset-v-col">
+          <div class="card d-flex justify-content-around bg-light text-primary p-2 mt-2 mb-3 bargraph-card">
             <div class="card-text d-flex p-2">
               <i class="fa fa-fire pr-3" aria-hidden="true"></i>
-              <div class="progress flex-grow-1 bg-white">
+              <div class="progress flex-grow-1">
                 <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 90%"
                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -97,7 +114,7 @@
             </div>
             <div class="card-text d-flex p-2">
               <i class="fa fa-fire pr-3" aria-hidden="true"></i>
-              <div class="progress flex-grow-1 bg-white">
+              <div class="progress flex-grow-1">
                 <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 43%"
                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -105,7 +122,7 @@
             </div>
             <div class="card-text d-flex p-2">
               <i class="fa fa-fire pr-3" aria-hidden="true"></i>
-              <div class="progress flex-grow-1 bg-white">
+              <div class="progress flex-grow-1">
                 <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 78%"
                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -113,7 +130,7 @@
             </div>
             <div class="card-text d-flex p-2">
               <i class="fa fa-fire pr-3" aria-hidden="true"></i>
-              <div class="progress flex-grow-1 bg-white">
+              <div class="progress flex-grow-1">
                 <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 54%"
                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -121,7 +138,7 @@
             </div>
             <div class="card-text d-flex p-2">
               <i class="fa fa-fire pr-3" aria-hidden="true"></i>
-              <div class="progress flex-grow-1 bg-white">
+              <div class="progress flex-grow-1">
                 <div class="progress-bar bg-primary my-progress-bar" role="progressbar" style="width: 36%"
                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -130,7 +147,7 @@
           </div>
         </div>
 
-        <div class="col-12 p-3 pl-4">
+        <div class="col-12 col-lg-6 order-lg-1 p-3 pl-4 m-auto">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <h3 class="pb-2">Lorem, ipsum.</h3>
           <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa sequi esse atque
@@ -142,12 +159,13 @@
 
 
       <!-- image+modal -->
-      <div class="row flex-column text-dark">
-        <div class="col-12 p-3 mt-4">
-          <img class="img-fluid" src="https://via.placeholder.com/360x580" alt="Placeholder">
+      <div class="row flex-column flex-lg-row text-light mb-3">
+        <div class="col-12 col-lg-4 pt-3 pb-3 mt-4 text-center">
+          <!-- <img class="img-fluid" src="https://via.placeholder.com/360x580" alt="Placeholder"> -->
+          <img class="img-fluid img-wave" src="img/wave.jpg" alt="Placeholder">
         </div>
 
-        <div class="col d-flex flex-column p-3 mb-3">
+        <div class="col-12 col-lg-8 d-flex flex-column p-3 mb-3 m-auto video-side-text">
           <h3><i class="fa fa-shield" aria-hidden="true"></i> Lorem, ipsum dolor.</h3>
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit eum tenetur cum accusamus esse
@@ -201,11 +219,35 @@
 
 
       <!-- star cards -->
-      <div class="row flex-column bg-light text-dark">
-        <div class="col-12 p-3 mt-4">
+      <div class="row bg-light text-secondary">
+        <div class="col-12 col-lg-4 p-3 m-auto order-1 order-lg-2">
 
 
-          <div class="card p-2 mb-4">
+          <div class="card p-2">
+            <div class="card-title text-center text-light card-banner pt-3">
+              <i class="fa fa-star rounded-circle bg-primary spin-left" aria-hidden="true"></i>
+              <i class="fa fa-star rounded-circle bg-primary spin-right" aria-hidden="true"></i>
+              <i class="fa fa-star rounded-circle bg-primary spin-left" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <p><i class="fa fa-quote-left pb-1 mb-3" aria-hidden="true"></i>
+                <br><span class="pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
+                  perspiciatis maiores
+                  consectetur tempora placeat, tempore non delectus architecto debitis dolores nemo hic maxime iusto
+                  eaque illum doloribus magni reprehenderit.</span></p>
+              <div class="text-center text-light">
+                <p><span class="bg-primary pl-3 pr-3">by</span></p>
+                <p><span class="bg-primary pl-4 pr-4"><i>John Smith</i></span></p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-12 col-lg-4 p-3 m-auto order-2 order-lg-1">
+
+
+          <div class="card p-2">
             <div class="card-body">
               <p><i class="fa fa-quote-left pb-1 mb-3" aria-hidden="true"></i>
                 <br><span class="pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
@@ -215,18 +257,17 @@
                   eaque illum doloribus magni reprehenderit.</span></p>
               <div class="text-center text-light">
                 <p><span class="bg-primary pl-3 pr-3">by</span></p>
-                <p><span class="bg-primary pl-4 pr-4"><i>John Smith</i></span></p>
+                <p><span class="bg-primary pl-4 pr-4"><i>Jim Dude</i></span></p>
               </div>
             </div>
           </div>
 
 
-          <div class="card p-2 mb-4">
-            <div class="card-title text-center text-light card-banner pt-3">
-              <i class="fa fa-star rounded-circle bg-primary" aria-hidden="true"></i>
-              <i class="fa fa-star rounded-circle bg-primary" aria-hidden="true"></i>
-              <i class="fa fa-star rounded-circle bg-primary" aria-hidden="true"></i>
-            </div>
+        </div>
+        <div class="col-12 col-lg-4 p-3 m-auto order-3">
+
+
+          <div class="card p-2">
             <div class="card-body">
               <p><i class="fa fa-quote-left pb-1 mb-3" aria-hidden="true"></i>
                 <br><span class="pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
@@ -235,22 +276,7 @@
                   eaque illum doloribus magni reprehenderit.</span></p>
               <div class="text-center text-light">
                 <p><span class="bg-primary pl-3 pr-3">by</span></p>
-                <p><span class="bg-primary pl-4 pr-4"><i>John Smith</i></span></p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card p-2 mb-2">
-            <div class="card-body">
-              <p><i class="fa fa-quote-left pb-1 mb-3" aria-hidden="true"></i>
-                <br><span class="pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
-                  perspiciatis maiores
-                  consectetur tempora placeat, tempore non delectus architecto debitis dolores nemo hic maxime iusto
-                  eaque illum doloribus magni reprehenderit.</span></p>
-              <div class="text-center text-light">
-                <p><span class="bg-primary pl-3 pr-3">by</span></p>
-                <p><span class="bg-primary pl-4 pr-4"><i>John Smith</i></span></p>
+                <p><span class="bg-primary pl-4 pr-4"><i>Big Billy</i></span></p>
               </div>
             </div>
           </div>
@@ -269,9 +295,12 @@
       </div>
       <div class="col-12 text-primary text-center pt-4 pb-5">
         <p>Lorem ipsum dolor sit amet.</p>
+        <!-- whoopsie! -->
+        <div class="whoopsie">
+          <div class="tenor-gif-embed" data-postid="4822629" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/toasty-mortalkombat-gif-4822629">Toasty Mortalkombat GIF</a> from <a href="https://tenor.com/search/toasty-gifs">Toasty GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
       </div>
     </footer>
-
 
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -3,8 +3,12 @@
     //outline: 1px solid red;
 }
 
+.navbar a {
+    font-size: 2.2em;
+}
+
 .bargraph-card {
-    height: 30vh;
+    height: 33vh;
 }
 
 .card-banner {
@@ -13,4 +17,138 @@
 
 .fa-fire {
     font-size: 1.4em;
+}
+
+.img-wave {
+    max-width: 510px;
+    max-height: 680px;
+}
+
+.header-overlay {
+    display: none;
+}
+
+.video video {
+    display: none;
+}
+
+.video-overlay {
+    display: none;
+}
+
+
+
+@media (min-width: 992px) {
+
+    body {
+        font-size: 1.3em !important;
+    }
+    
+/*
+    .img-beach {
+        background: url('../img/beach-dark.png') no-repeat center center;
+        background-size: cover;
+    }
+*/
+    .bargraph-card {
+        position: absolute;
+        top: 100px;
+        left: -20px;
+        box-shadow: 2px 2px 5px 0px #555;
+
+    }
+    
+    .subtle-heading {
+        position: relative;
+        left: 20%;
+    }
+
+    .header-card-form {
+        position: relative;
+        left: 20%;
+    }
+    
+    .header-overlay {
+        display: block;
+    }
+
+    .video video{
+        display: block;
+        position: absolute; 
+        right: 0; 
+        bottom: 0;
+        z-index: -2;
+    }
+
+    .video-overlay {
+        display: block;
+        position: absolute; 
+        right: 0; 
+        bottom: 0;
+        z-index: -1;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .video-side-text h3 {
+        font-family: 'Tangerine';
+        font-size: 7vh;
+    }
+
+    .header-overlay h1 {
+        font-family: 'Tangerine';
+        font-size: 12vh;
+    }
+
+}
+
+
+@keyframes barchart-grow {
+  from {
+      width: 0px;
+  }
+  to {
+    
+  }
+}
+
+.progress>div {
+  animation-name: barchart-grow;
+  animation-duration: 2s;
+}
+
+
+
+@keyframes spin-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-right {
+  animation: spin-right 2s linear infinite;
+}
+
+
+
+@keyframes spin-left {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.spin-left {
+  animation: spin-left 2s linear infinite;
+}
+
+.whoopsie {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 25px;
 }
