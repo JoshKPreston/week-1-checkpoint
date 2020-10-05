@@ -61,25 +61,6 @@ primary #b58900
   left: 0;
 }
 
-#stats {
-  position: absolute;
-  top: 625px;
-  left: 0;
-}
-
-#info {
-  position: absolute;
-  top: 1200px;
-  left: 0;
-}
-
-#reviews {
-  position: absolute;
-  top: 2100px;
-  left: 0;
-}
-
-
 @media (min-width: 992px) {
 
     body {
@@ -152,31 +133,7 @@ primary #b58900
         font-family: 'Tangerine';
         font-size: 12vh;
     }
-
-    #home {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    #stats {
-      position: absolute;
-      top: 700px;
-      left: 0;
-    }
-
-    #info {
-      position: absolute;
-      top: 1010px;
-      left: 0;
-    }
-
-    #reviews {
-      position: absolute;
-      top: 1630px;
-      left: 0;
-    }
-
+    
 }
 
 
