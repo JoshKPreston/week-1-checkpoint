@@ -13,25 +13,33 @@
   <title>Lorem Ipsum</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarID" data-offset="0">
   <div class="container-fluid d-flex flex-column h-100">
 
     <!-- sticky nav -->
     <div class="row sticky-top">
-      <nav class="navbar container-fluid navbar-dark bg-primary sticky-top p-2">
+      <nav id="navbarID" class="nav-header navbar container-fluid navbar-dark bg-primary sticky-top p-2">
         <a class="navbar-brand" href="#"><i class="fa fa-first-order p-2" aria-hidden="true"></i> Lorem Ipsum</a>
+      </nav>
+      <nav class="nav-sleeve col-12 bg-dark m-auto d-inline-flex justify-content-around align-items-center">
+        <a class="" href="#home"><i class="fa fa-fire text-light pr-3" aria-hidden="true"> Home</i></a>
+        <a class="" href="#stats"><i class="fa fa-fire text-light pr-3" aria-hidden="true"> Stats</i></a>
+        <a class="" href="#info"><i class="fa fa-fire text-light pr-3" aria-hidden="true"> Info</i></a>
+        <a class="" href="#reviews"><i class="fa fa-fire text-light pr-3" aria-hidden="true"> Reviews</i></a>
       </nav>
     </div>
 
-
     <!-- header -->
+    <div id="home"></div>
     <header>
+
       <div class="video-overlay"></div>
       <div class="row video">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
           <source src="img/wave.mp4" type="video/mp4">
         </video>
       </div>
+
       <div class="row text-light flex-column flex-lg-row img-beach">
         <div class="col-12 col-lg-4">
           <h3 class="p-2 pt-4 text-light subtle-heading">Subtle heading</h3>
@@ -86,13 +94,15 @@
             </form>
           </div>
         </div>
-        <div class="col-lg-5 text-light header-overlay mb-auto ml-auto mr-auto mt-4">
-          <div class="border-left border-primary mt-5 pl-3">
+
+        <div class="col-lg-5 text-light header-overlay mb-auto ml-auto mr-auto mt-5">
+          <div class="mt-5 pl-3 header-overlay-inner-text-box">
             <h1>Text over an image</h1>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae molestiae aut incidunt nulla,
               laborum quam excepturi illo libero sunt.</h3>
           </div>
         </div>
+
       </div>
     </header>
 
@@ -100,7 +110,8 @@
 
     <main>
       <!-- bargraph -->
-      <div class="row flex-column flex-lg-row bg-light text-primary">
+      <div id="stats"></div>
+      <section class="row flex-column flex-lg-row bg-light text-primary">
 
         <div class="col-12 col-lg-6 order-lg-2 bg-light p-3 bargraph-offset-v-col">
           <div class="card d-flex justify-content-around bg-light text-primary p-2 mt-2 mb-3 bargraph-card">
@@ -154,12 +165,13 @@
             exercitationem exratione neque sint cum aspernatur ullam quia sed eaque possimus pariatur magni, a
             consequatur quo.</p>
         </div>
-      </div>
+      </section>
 
 
 
       <!-- image+modal -->
-      <div class="row flex-column flex-lg-row text-light mb-3">
+      <div id="info"></div>
+      <section class="row flex-column flex-lg-row text-light mb-3">
         <div class="col-12 col-lg-4 pt-3 pb-3 mt-4 text-center">
           <!-- <img class="img-fluid" src="https://via.placeholder.com/360x580" alt="Placeholder"> -->
           <img class="img-fluid img-wave" src="img/wave.jpg" alt="Placeholder">
@@ -193,7 +205,8 @@
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate ut architecto porro
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate ut architecto
+                          porro
                           magni, molestias minima veritatis animi voluptas totam.</p>
                       </div>
                     </div>
@@ -215,14 +228,15 @@
             });
           </script>
         </div>
-      </div>
+      </section>
 
 
-      <!-- star cards -->
-      <div class="row bg-light text-secondary">
+
+      <!-- quote cards -->
+      <div id="reviews"></div>
+      <section class="row bg-light text-secondary">
+
         <div class="col-12 col-lg-4 p-3 m-auto order-1 order-lg-2">
-
-
           <div class="card p-2">
             <div class="card-title text-center text-light card-banner pt-3">
               <i class="fa fa-star rounded-circle bg-primary spin-left" aria-hidden="true"></i>
@@ -241,12 +255,10 @@
               </div>
             </div>
           </div>
-
-
         </div>
+
+
         <div class="col-12 col-lg-4 p-3 m-auto order-2 order-lg-1">
-
-
           <div class="card p-2">
             <div class="card-body">
               <p><i class="fa fa-quote-left pb-1 mb-3" aria-hidden="true"></i>
@@ -261,12 +273,10 @@
               </div>
             </div>
           </div>
-
-
         </div>
+
+
         <div class="col-12 col-lg-4 p-3 m-auto order-3">
-
-
           <div class="card p-2">
             <div class="card-body">
               <p><i class="fa fa-quote-left pb-1 mb-3" aria-hidden="true"></i>
@@ -280,10 +290,10 @@
               </div>
             </div>
           </div>
-
-
         </div>
-      </div>
+
+
+      </section>
     </main>
 
 
@@ -297,11 +307,14 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <!-- whoopsie! -->
         <div class="whoopsie">
-          <div class="tenor-gif-embed" data-postid="4822629" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/toasty-mortalkombat-gif-4822629">Toasty Mortalkombat GIF</a> from <a href="https://tenor.com/search/toasty-gifs">Toasty GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+          <div class="tenor-gif-embed" data-postid="4822629" data-share-method="host" data-width="100%"
+            data-aspect-ratio="1.0"><a href="https://tenor.com/view/toasty-mortalkombat-gif-4822629">Toasty
+              Mortalkombat GIF</a> from <a href="https://tenor.com/search/toasty-gifs">Toasty GIFs</a></div>
+          <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         </div>
       </div>
     </footer>
-
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
