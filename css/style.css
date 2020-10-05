@@ -1,11 +1,8 @@
-
 /*
 primary #b58900
-
 */
 
 * {
-    //outline: 1px solid red;
     scroll-behavior: smooth;
 }
 
@@ -15,6 +12,10 @@ primary #b58900
 
 .nav-sleeve {
   height: 35px;
+}
+
+.nav-sleeve a {
+  padding: 0px;
 }
 
 .navbar a {
@@ -38,11 +39,6 @@ primary #b58900
   margin-left: -2px;
 }
 
-.img-wave {
-    max-width: 510px;
-    max-height: 680px;
-}
-
 .header-overlay {
   display: none;
 }
@@ -53,6 +49,10 @@ primary #b58900
 
 .video-overlay {
     display: none;
+}
+
+.phone {
+  display: none;
 }
 
 #home {
@@ -66,26 +66,19 @@ primary #b58900
     body {
         font-size: 1.3em !important;
     }
-      
-    /*
-    .img-beach {
-        background: url('../img/beach-dark.png') no-repeat center center;
-        background-size: cover;
-    }
-    */
-
+    
     .fa-fire {
         font-size: 1em;
     }
 
-    .bargraph-card {
-        position: absolute;
-        top: 100px;
-        left: -20px;
-        box-shadow: 2px 2px 5px 0px #555;
-
+    .logo {
+      margin-left: 6%;
     }
-    
+
+    .phone {
+        display: block;
+    }
+
     .subtle-heading {
         position: relative;
         left: 20%;
@@ -102,7 +95,6 @@ primary #b58900
 
     .header-overlay-inner-text-box {
         border-left: 5px solid #b58900;
-        //background: rgba(0,0,0,0.5);
     }
 
     .video video{
@@ -124,7 +116,15 @@ primary #b58900
         background-color: rgba(0,0,0,0.5);
     }
 
-    .video-side-text h3 {
+    .bargraph-card {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: -120px;
+        box-shadow: 2px 2px 5px 0px #555;
+    }
+    
+    .img-side-text h3 {
         font-family: 'Tangerine';
         font-size: 7vh;
     }
@@ -137,18 +137,16 @@ primary #b58900
 }
 
 
-@keyframes barchart-grow {
+
+@keyframes bargraph-grow {
   from {
       width: 0px;
-  }
-  to {
-    
   }
 }
 
 .progress>div {
-  animation-name: barchart-grow;
-  animation-duration: 2s;
+  animation-name: bargraph-grow;
+  animation-duration: 10s;
 }
 
 
@@ -161,7 +159,6 @@ primary #b58900
     transform: rotate(360deg);
   }
 }
-
 .spin-right {
   animation: spin-right 2s linear infinite;
 }
@@ -176,9 +173,60 @@ primary #b58900
     transform: rotate(0deg);
   }
 }
-
 .spin-left {
   animation: spin-left 2s linear infinite;
+}
+
+
+
+@keyframes drop-in {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.drop-in {
+	animation: drop-in 10s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+	animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom {
+	animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .whoopsie {
